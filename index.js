@@ -20,7 +20,23 @@ bot.once("message", async function (message){
 
     }
 case "invite":
-message.channel.send("test")
+message.channel.send("",{
+   embed:{
+       color: 0xF0000
+       author:message.author.name
+       title:'',
+       fields:[{
+           name:"come test me"
+           value:"https://discord.gg/gFXxhyw"
+           inline: false
+       }]
+       footer: {
+           footer:"share this link",
+        
+       },
+   } 
+});
+
 break;
 
 //BREAK
