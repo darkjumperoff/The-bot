@@ -65,5 +65,25 @@ bot.on("message", async function(message) {
     }
   
 });
-
+client.on('message', async message => {
+ 
+    if(message.content === "Friends"){
+        message.reply(":heart:*Flemin Bilou Gaytora Tedy EModzz Tweesch Erwan Valentin SMZ_Timber Pirarennaol*:heart:")
+        console.log("Le bot dit bonjour")
+    }
+ 
+    if(message.content === prefix + "help"){
+        var help_embed = new Discord.RichEmbed()
+        .setColor("#CC0000")
+        .setTitle("list of my command !")
+        .setDescription("ceci sont mes commandes D:")
+        .setThumbnail(message.author.avatarURL)
+        .addField(Friends", "my mist of my friends")
+        .addField("channel", "The channel of the creator")
+        .addField("invite", "get the invitation of the server ;)")
+        .setTimestamp()
+        message.channel.send(help_embed);
+    }
+ 
+});
 bot.login(process.env.TOKEN);
