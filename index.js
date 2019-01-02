@@ -37,6 +37,7 @@ bot.on("message", async function(message) {
     }
   
 });
+
 bot.on("message", async function(message) {
     if (message.author.equals(bot.user)) return;
 
@@ -65,12 +66,14 @@ bot.on("message", async function(message) {
     }
   
 });
+
 client.on('message', async message => {
  
     if(message.content === "Friends"){
         message.reply(":heart:*Flemin Bilou Gaytora Tedy EModzz Tweesch Erwan Valentin SMZ_Timber Pirarennaol*:heart:")
         console.log("Le bot dit bonjour")
     }
+    
     if(message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#CC0000")
