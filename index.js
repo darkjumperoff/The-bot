@@ -73,7 +73,6 @@ client.on('message', async message => {
         message.reply(":heart:*Flemin Bilou Gaytora Tedy EModzz Tweesch Erwan Valentin SMZ_Timber Pirarennaol*:heart:")
         console.log("Le bot dit bonjour")
     }
-    
     if(message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor("#CC0000")
