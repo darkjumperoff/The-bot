@@ -7,4 +7,4 @@ bot.on("ready", function() {
     console.log("Le bot est connecté");
 });
 
-bot.login("NTI5Nzg3Mzg1NDg4MDgwODk3.Dw4e_g.LjAkFH8t4M9ZmMXpALKYFsY80no");
+bot.login("process.env.token");
