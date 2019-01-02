@@ -5,7 +5,7 @@ var PREFIX = "!";
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
-    bot.user.setGame("TutoBot, !help");
+    bot.user.setGame("The bot, D!help");
     console.log("Le bot a bien ete connecte");
 });
 
@@ -24,12 +24,12 @@ bot.on("message", async function(message) {
                 author: message.author.name,
                 title: '',
                 fields: [{
-                    name: "Lien d'invitation discord",
-                    value: "https://discord.gg/CsH3kj",
+                    name: "come test me! ",
+                    value: "https://discord.gg/gFXxhyw",
                     inline: false
                 }],
                 footer: {
-                    footer: "Partager ce lien à tous vos amis !",
+                    footer: "share thislink with your friends !",
                 },
             }
         });
